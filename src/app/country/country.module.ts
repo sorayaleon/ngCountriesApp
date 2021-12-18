@@ -14,6 +14,12 @@ import { ShowCountryComponent } from './pages/show-country/show-country.componen
     ByRegionComponent,
     ShowCountryComponent
   ],
+  exports: [
+    ByCapitalComponent,
+    ByCountryComponent,
+    ByRegionComponent,
+    ShowCountryComponent
+  ],
   imports: [
     CommonModule
   ]
