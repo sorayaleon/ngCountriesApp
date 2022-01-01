@@ -16,9 +16,10 @@ export class ByCountryComponent {
 
   constructor(private countryService: CountryService) { }
 
-  search() {
+  search(term: string) {
     this.isError = false;
-    console.log(this.term);
+    this.term = term;
+
     this.countryService.searchCountry(this.term).subscribe(countries => {
       console.log(countries);
       this.countries = countries;
