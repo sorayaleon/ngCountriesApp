@@ -28,4 +28,8 @@ export class ByCountryComponent {
       this.countries = [];
     });
   }
+
+  suggestions(term: string) {
+    this.isError = false;
+  }
 }
