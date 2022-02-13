@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-by-region',
@@ -6,11 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class ByRegionComponent implements OnInit {
+export class ByRegionComponent {
+
+  regions: string[] = ['africa', 'america', 'asia', 'europe', 'oceania'];
+  activeRegion: string = '';
 
   constructor() { }
 
-  ngOnInit(): void {
+  activateRegion( region: string) {
+    this.activeRegion = region;
   }
 
 }
