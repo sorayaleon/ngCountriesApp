@@ -7,6 +7,7 @@
     <!-- Alternativas para cambiar la clase cuando se ha activado el botón -->
     <!-- [class.btn-primary]="region === activeRegion"  -->
     <!-- [ngClass]="{'btn-primary': activeRegion === region, 'btn-outline-primary': activeRegion !== region}" -->
-    <button *ngFor="let region of regions" class="btn btn-outline-primary mx-1" (click)="activateRegion(region)">{{ region }}</button>
+    <!-- [class]="(region === activeRegion) ? 'btn btn-primary mx-1' : 'btn btn-outline-primary mx-1'" -->
+    <button *ngFor="let region of regions" [class]="getCSSClass(region)" (click)="activateRegion(region)">{{ region | titlecase }}</button>
   </div>
 </div>
