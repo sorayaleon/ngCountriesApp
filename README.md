@@ -1,6 +1,7 @@
 # CountriesApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
+Angular exercises included in Fernando Herrera's course [Angular: de Cero a experto (Edición 2021)](https://www.udemy.com/course/angular-fernando-herrera/)
 
 ## Development server
 
